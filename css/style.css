@@ -1,6 +1,13 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -16,23 +23,22 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: "Raleway", "sans serif";
+    font-weight: 700;
+    max-width: 140rem;
+    margin: 0 auto;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
+    max-width: 140rem;
+    padding: 0 5rem;
     box-sizing: border-box;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
 }
 
 .card {
@@ -46,16 +52,45 @@ a {
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 16px;
-}
-
 .euro {
     font-weight: 700;
 }
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/*fontsize*/
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+.section-title {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p,
+a {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.footer h3 {
+    font-size: 1.7rem;
+}
+
+i {
+    color: #0065FC;
+    font-size: 1.5rem;
 }
 
 /*Nav bar header*/
@@ -65,17 +100,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
-    height: 79px;
+    height: 11rem;
 }
 
 .nav-bar {
     display: flex;
-    width: fit-content 344px;
-    height: fit-content 35px;
-    left: 1096px;
-    padding: 0px 50px;
-    gap: 68px;
+    justify-content: space-between;
+    width: 25rem;
 }
 
 .logo-booki {
@@ -90,17 +121,7 @@ a {
     padding: 30px 50px;
     gap: 10px;
     align-items: center;
-    justify-content: center; 
-}
-
-.info-group {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 100%;
-    max-width: 1440px;
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 .headline {
@@ -112,25 +133,112 @@ a {
     gap: 8px;
 }
 
+.headline p {
+    margin: 1rem 0;
+}
+
 .search-bar {
     display: flex;
-    width: 100%;
-    max-width: 1340px;
-    height: 49px;
-    margin: 0 auto;
-    gap: 24px;
+    margin: 1.5rem 0;
+}
+
+.info-bar {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.icon-info-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.fa-info-circle {
+    border-color: #D9D9D9;
+    color: #0065FC;
+}
+
+.icon-box {
+    width: 5rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem 0 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-location-dot {
+    color: initial;
+}
+
+.search-city input {
+    width: 19rem;
+    border: 1px solid #f2f2f2;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding: 1.5rem;
+}
+
+.search-icon {
+    width: 5rem;
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.search {
+    width: 14rem;
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main-filter {
+    max-width: 95rem;
+    margin: 3rem 0;
 }
 
 .filter-bar {
     display: flex;
-    width: 100%;
-    width: 758px;
-    height: 50px;
-    gap: 15px;
+    align-items: center;
 }
 
-.info-bar {
-    font-size: 14px;
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.filter {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 4rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+
+.filter i {
+    margin-right: 1rem;
+}
+
+.filter p {
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -154,12 +262,14 @@ a {
 
 .hebergements {
     width: 65%;
+    padding: 0px;
 }
 
 .hebergements-title {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .hebergements-cards {
@@ -167,22 +277,53 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    align-items: center;
+
+    a {
+        width: 30%;
+        min-width: 200px;
+
+        .card {
+            width: 100%;
+        }
+
+        .card-content {
+            padding: 0 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+    }
 }
+
+.button-hebergements {
+
+    button {
+        margin-top: 20px;
+        width: fit-content;
+        height: 2em;
+        align-self: flex-end;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 2px solid white;
+        transition-duration: 0.2s;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: large;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
 
 .hebergements-cards img {
     width: 100%;
     height: 136px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-
-.hebergements-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
@@ -247,7 +388,7 @@ a {
     margin-bottom: 5px;
 }
 
-/* A faire */ 
+/* A faire */
 /*aligner en horizontal et redimentionné pour faire 25% de la largeur de <div id="activites" class="activites">*/
 
 
@@ -364,9 +505,9 @@ a {
 }
 
 
-/*besoin de resize les photos pour l'opti sur mobile afin qu'ils pèsent moins lourd ?
+/*
 
-dans le head, pour les méta, j'ai besoin d'ajouter un fav icone ?
+BESOIN que l'input de "search-city" fasse la même height que la classe "search-bar"
 
 A faire :
 
@@ -382,4 +523,7 @@ A faire :
 -esthétique des box avec images et texte 
 -vérif couleurs
 -faire les hover et overlay 
--faire le responsive média queries pour le resize de l'interphase*/
+-faire le responsive média queries pour le resize de l'interphase
+
+
+*/
