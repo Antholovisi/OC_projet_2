@@ -25,13 +25,13 @@ body {
     justify-content: center;
     font-family: "Raleway", "sans serif";
     font-weight: 700;
-    max-width: 140rem;
+    max-width: 144rem;
     margin: 0 auto;
 }
 
 .main-container {
     width: 100%;
-    max-width: 140rem;
+    max-width: 144rem;
     padding: 0 5rem;
     box-sizing: border-box;
 }
@@ -43,14 +43,15 @@ a {
 
 .card {
     background-color: white;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 2rem;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
     object-fit: cover;
+    border: 5px solid white;
 }
+
 
 .euro {
     font-weight: 700;
@@ -202,7 +203,7 @@ i {
     border-radius: 0 1.5rem 1.5rem 0;
     color: #ffffff;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 700;
 }
 
@@ -249,42 +250,39 @@ i {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 2rem;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 
-
-/* tu dois réussir a aligner en 3x2 les images en ayant 33% de l'espace pour chaque article
-(<article class="card"> qui ne prend pas 33% de la largeur de <section id="hebergements" class="hebergements">*/
-
 .hebergements {
     width: 65%;
-    padding: 0px;
+    padding: 0 2.5rem;
 }
 
 .hebergements-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 3rem 0;
 }
 
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 3rem;
     align-items: center;
+    justify-content: space-between;
 
     a {
         width: 30%;
-        min-width: 200px;
 
-        .card {
+
+        img {
+            object-fit: cover;
             width: 100%;
+            box-sizing: border-box;
         }
 
         .card-content {
@@ -299,35 +297,19 @@ i {
 }
 
 .button-hebergements {
-
-    button {
-        margin-top: 20px;
-        width: fit-content;
-        height: 2em;
-        align-self: flex-end;
-        background-color: rgba(0, 0, 0, 0.2);
-        border: 2px solid white;
-        transition-duration: 0.2s;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: large;
-    }
-
-    button:hover {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
+    margin-top: 3rem;
 }
 
 
 .hebergements-cards img {
     width: 100%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height: 12.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
+    margin-top: 1rem;
     margin-bottom: 4px;
 }
 
@@ -341,28 +323,36 @@ i {
 
 /****** Activites ***********/
 
+.activites {
+    padding: 1.5rem;
+}
+
 .activites-cards {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+
 }
 
 .activites-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 3rem 0;
 }
 
 .activites-cards .card {
-    display: flex;
-    margin-top: 33px;
+    width: 22%;
+    height: 45rem;
+    border-radius: 2rem;
+
 }
 
 .activites-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 100%;
+    height: 40rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border: none;
 
 }
 
@@ -388,36 +378,40 @@ i {
     margin-bottom: 5px;
 }
 
-/* A faire */
-/*aligner en horizontal et redimentionné pour faire 25% de la largeur de <div id="activites" class="activites">*/
-
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    padding: 0 2.5rem;
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 3rem 0;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 0 3rem 0;
 }
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    height: 13.6rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 }
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -425,8 +419,8 @@ i {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
 }
 
 .populaires-cards .card-subtitle {
@@ -434,23 +428,36 @@ i {
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 /*footer*/
 
-/******************    A  FAIRE    ******************/
+
 .footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #F2F2F2;
+    padding: 1.5rem 0 0;
+
+    ul {
+        list-style: none;
+    }
 }
 
 .footer-nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between
+    background-color: #F2F2F2;
+
+    h3,
+    li {
+        padding: 1rem;
+    }
 }
+
+.footer-container {
+    width: 33%;
+    padding: 1rem;
+}
+
+
 
 /*Main title, Hebergement title, activités title*/
 .hebergements-title,
