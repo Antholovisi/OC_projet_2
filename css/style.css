@@ -1,6 +1,13 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -16,12 +23,16 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: "Raleway", "sans serif";
+    font-weight: 700;
+    max-width: 144rem;
+    margin: 0 auto;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
+    max-width: 144rem;
+    padding: 0 5rem;
     box-sizing: border-box;
 }
 
@@ -30,25 +41,17 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
 .card {
     background-color: white;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 2rem;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
     object-fit: cover;
+    border: 5px solid white;
 }
 
-.card-title {
-    font-size: 16px;
-}
 
 .euro {
     font-weight: 700;
@@ -58,6 +61,39 @@ a {
     color: var(--main-bg-color)
 }
 
+/*fontsize*/
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+.section-title {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p,
+a {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.footer h3 {
+    font-size: 1.7rem;
+}
+
+i {
+    color: #0065FC;
+    font-size: 1.5rem;
+}
+
 /*Nav bar header*/
 
 
@@ -65,17 +101,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
-    height: 79px;
+    height: 11rem;
 }
 
 .nav-bar {
     display: flex;
-    width: fit-content 344px;
-    height: fit-content 35px;
-    left: 1096px;
-    padding: 0px 50px;
-    gap: 68px;
+    justify-content: space-between;
+    width: 25rem;
 }
 
 .logo-booki {
@@ -90,17 +122,7 @@ a {
     padding: 30px 50px;
     gap: 10px;
     align-items: center;
-    justify-content: center; 
-}
-
-.info-group {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 100%;
-    max-width: 1440px;
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 .headline {
@@ -112,25 +134,112 @@ a {
     gap: 8px;
 }
 
+.headline p {
+    margin: 1rem 0;
+}
+
 .search-bar {
     display: flex;
-    width: 100%;
-    max-width: 1340px;
-    height: 49px;
-    margin: 0 auto;
-    gap: 24px;
+    margin: 1.5rem 0;
+}
+
+.info-bar {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.icon-info-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.fa-info-circle {
+    border-color: #D9D9D9;
+    color: #0065FC;
+}
+
+.icon-box {
+    width: 5rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem 0 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-location-dot {
+    color: initial;
+}
+
+.search-city input {
+    width: 19rem;
+    border: 1px solid #f2f2f2;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding: 1.5rem;
+}
+
+.search-icon {
+    width: 5rem;
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.search {
+    width: 14rem;
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.main-filter {
+    max-width: 95rem;
+    margin: 3rem 0;
 }
 
 .filter-bar {
     display: flex;
-    width: 100%;
-    width: 758px;
-    height: 50px;
-    gap: 15px;
+    align-items: center;
 }
 
-.info-bar {
-    font-size: 14px;
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.filter {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 4rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+
+.filter i {
+    margin-right: 1rem;
+}
+
+.filter p {
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -141,52 +250,66 @@ a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 2rem;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 
-
-/* tu dois réussir a aligner en 3x2 les images en ayant 33% de l'espace pour chaque article
-(<article class="card"> qui ne prend pas 33% de la largeur de <section id="hebergements" class="hebergements">*/
-
 .hebergements {
     width: 65%;
+    padding: 0 2.5rem;
 }
 
 .hebergements-title {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 3rem 0;
 }
 
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
     justify-content: space-between;
-    gap: 30px;
+
+    a {
+        width: 30%;
+
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card-content {
+            padding: 0 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+    }
 }
+
+.button-hebergements {
+    margin-top: 3rem;
+}
+
 
 .hebergements-cards img {
     width: 100%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.hebergements-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    height: 12.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
+    margin-top: 1rem;
     margin-bottom: 4px;
 }
 
@@ -200,28 +323,36 @@ a {
 
 /****** Activites ***********/
 
+.activites {
+    padding: 1.5rem;
+}
+
 .activites-cards {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+
 }
 
 .activites-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 3rem 0;
 }
 
 .activites-cards .card {
-    display: flex;
-    margin-top: 33px;
+    width: 22%;
+    height: 45rem;
+    border-radius: 2rem;
+
 }
 
 .activites-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 100%;
+    height: 40rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border: none;
 
 }
 
@@ -247,36 +378,40 @@ a {
     margin-bottom: 5px;
 }
 
-/* A faire */ 
-/*aligner en horizontal et redimentionné pour faire 25% de la largeur de <div id="activites" class="activites">*/
-
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    padding: 0 2.5rem;
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 3rem 0;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 0 3rem 0;
 }
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    height: 13.6rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 }
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,8 +419,8 @@ a {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
 }
 
 .populaires-cards .card-subtitle {
@@ -293,23 +428,36 @@ a {
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 /*footer*/
 
-/******************    A  FAIRE    ******************/
+
 .footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #F2F2F2;
+    padding: 1.5rem 0 0;
+
+    ul {
+        list-style: none;
+    }
 }
 
 .footer-nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between
+    background-color: #F2F2F2;
+
+    h3,
+    li {
+        padding: 1rem;
+    }
 }
+
+.footer-container {
+    width: 33%;
+    padding: 1rem;
+}
+
+
 
 /*Main title, Hebergement title, activités title*/
 .hebergements-title,
@@ -364,9 +512,9 @@ a {
 }
 
 
-/*besoin de resize les photos pour l'opti sur mobile afin qu'ils pèsent moins lourd ?
+/*
 
-dans le head, pour les méta, j'ai besoin d'ajouter un fav icone ?
+BESOIN que l'input de "search-city" fasse la même height que la classe "search-bar"
 
 A faire :
 
@@ -382,4 +530,7 @@ A faire :
 -esthétique des box avec images et texte 
 -vérif couleurs
 -faire les hover et overlay 
--faire le responsive média queries pour le resize de l'interphase*/
+-faire le responsive média queries pour le resize de l'interphase
+
+
+*/
