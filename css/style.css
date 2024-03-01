@@ -108,7 +108,34 @@ i {
     display: flex;
     justify-content: space-between;
     width: 25rem;
+    list-style: none;
+    padding: 0;
 }
+
+.nav-bar a {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #0065FC;
+    width: 0;
+    top: -2rem;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #0065FC;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
 
 .logo-booki {
     width: 61.09px;
@@ -277,24 +304,25 @@ i {
 
     a {
         width: 30%;
+    }
 
 
-        img {
-            object-fit: cover;
-            width: 100%;
-            box-sizing: border-box;
-        }
+    img {
+        object-fit: cover;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-        .card-content {
-            padding: 0 15px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-sizing: border-box;
-        }
+    .card-content {
+        padding: 0 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
     }
 }
+
 
 .button-hebergements {
     margin-top: 3rem;
@@ -349,7 +377,7 @@ i {
 
 .activites-cards img {
     width: 100%;
-    height: 40rem;
+    height: 38rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border: none;
@@ -357,17 +385,12 @@ i {
 }
 
 .activites-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
+    padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-}
-
-.activites-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    padding-top: 1.5rem;
 }
 
 .activites-cards .card-subtitle {
@@ -394,7 +417,7 @@ i {
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
     padding: 0 0 3rem 0;
 }
 
@@ -432,14 +455,13 @@ i {
 }
 
 /*footer*/
-
-
-.footer {
+s .footer {
     padding: 1.5rem 0 0;
+}
 
-    ul {
-        list-style: none;
-    }
+.footer ul {
+    list-style: none;
+    padding: 0;
 }
 
 .footer-nav {
@@ -514,22 +536,8 @@ i {
 
 /*
 
-BESOIN que l'input de "search-city" fasse la même height que la classe "search-bar"
-
 A faire :
 
-mise en forme de la section "hebergement" pour les images, utiliser flexbox pour avoir du 3x3 en desktop et responsive pour tablette et mobile
-
-mise en forme de la section "activités" pour les images, utiliser flexbox row en desktop et responsive pour tablette et mobile qui passera en flex column
-
-mise en forme footer en flex row desktop
-
-A faire : 
-
--Font
--esthétique des box avec images et texte 
--vérif couleurs
--faire les hover et overlay 
 -faire le responsive média queries pour le resize de l'interphase
 
 
