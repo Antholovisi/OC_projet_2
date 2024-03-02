@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -85,8 +86,7 @@ h3 {
     font-size: 1.6rem;
 }
 
-p,
-a {
+p,a {
     font-size: 1.6rem;
     font-weight: 500;
 }
@@ -101,7 +101,6 @@ i {
 }
 
 /*Nav bar header*/
-
 
 .nav-header {
     display: flex;
@@ -142,7 +141,6 @@ i {
     width: 100%;
 }
 
-
 .logo-booki {
     width: 61.09px;
     height: 19px;
@@ -179,7 +177,7 @@ i {
 .info-bar {
     display: flex;
     align-items: center;
-    margin: 2rem 0;
+    margin: 2rem 0 3rem;
 }
 
 .icon-info-bar {
@@ -191,7 +189,6 @@ i {
     justify-content: center;
     border-radius: 50%;
 }
-
 
 .fa-info-circle {
     border-color: #D9D9D9;
@@ -221,6 +218,7 @@ i {
     font-weight: 700;
     font-size: 1.8em;
     padding: 1.5rem;
+    outline: none;
 }
 
 .search-icon {
@@ -285,6 +283,7 @@ i {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -316,7 +315,6 @@ i {
     gap: 3rem;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .hebergements-cards a {
@@ -338,12 +336,9 @@ i {
     box-sizing: border-box;
 }
 
-
-
 .button-hebergements {
     margin-top: 3rem;
 }
-
 
 .hebergements-cards img {
     width: 100%;
@@ -368,27 +363,25 @@ i {
 /****** Activites ***********/
 
 .activites {
-    padding: 1.5rem;
+    padding: 0 1.5rem 1.5rem;
 }
 
 .activites-cards {
     display: flex;
     justify-content: space-between;
-
 }
 
 .activites-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0;
+    margin: 4rem 0 2rem;
 }
 
 .activites-cards .card {
-    width: 22%;
+    width: 23%;
     height: 44rem;
     border-radius: 2rem;
-
 }
 
 .activites-cards img {
@@ -397,7 +390,6 @@ i {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border: none;
-
 }
 
 .activites-cards .card-content {
@@ -415,6 +407,7 @@ i {
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
     padding: 0 2.5rem;
@@ -468,8 +461,9 @@ i {
 }
 
 /*footer*/
-s .footer {
-    padding: 1.5rem 0 0;
+
+.footer {
+    padding: 3rem 0 0;
 }
 
 .footer ul {
@@ -482,8 +476,7 @@ s .footer {
     background-color: #F2F2F2;
 }
 
-.footer-nav h3,
-li {
+.footer-nav h3,li {
     padding: 1rem;
 }
 
@@ -492,9 +485,8 @@ li {
     padding: 1rem;
 }
 
-
-
 /*Main title, Hebergement title, activités title*/
+
 .hebergements-title,
 .activites-title,
 .h1 {
@@ -502,7 +494,6 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -545,13 +536,3 @@ li {
 @media (max-width: 767.98px) {
     /* ... */
 }
-
-
-/*
-
-A faire :
-
--faire le responsive média queries pour le resize de l'interphase
-
-
-*/
