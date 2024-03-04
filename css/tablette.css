@@ -1,0 +1,67 @@
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+
+    /*FILTER*/
+
+    .filter-bar {
+        display: block;
+    }
+
+    .filter-bar h2 {
+        padding-bottom: 2rem;
+    }
+
+    .filter-container {
+        justify-content: space-between;
+    }
+
+    /*HEBERGEMENTS*/
+
+    .hebergements-and-popular {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .button-hebergements {
+        margin: 3rem 0;
+    }
+
+    /*POPULAR*/
+
+    .popular {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .popular-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .popular-cards a {
+        width: 30%;
+    }
+
+    .popular-cards .card-title {
+        font-size: 14px;
+    }
+
+    .popular-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    /*ACTIVITIES*/
+
+    .activities-cards .card {
+        height: 27rem;
+    }
+
+    .activities-cards img {
+        height: 20rem;
+    }
+}
