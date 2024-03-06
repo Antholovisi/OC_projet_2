@@ -1,6 +1,10 @@
 /* Medium devices (tablets, less/equal than 1024px) */
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    * {
+        margin: 0;
+    }
 
     /*FILTER*/
 
@@ -37,21 +41,26 @@
         margin-top: 50px;
     }
 
-    .popular-cards {
+    .popular-card {
+        width: 32%;
+        height: 100%;
+    }
+
+    .popular-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .popular-cards a {
+    .popular-container a {
         width: 30%;
     }
 
-    .popular-cards .card-title {
+    .popular-container .card-title {
         font-size: 14px;
     }
 
-    .popular-cards .card-subtitle {
+    .popular-container .card-subtitle {
         font-size: 13px;
     }
 
