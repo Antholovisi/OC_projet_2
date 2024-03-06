@@ -1,5 +1,269 @@
-/* Small devices (phones, less than 768px) */
+/* Mobile styles in mobile.css (max-width: 767.98px) */
 
-@media (max-width: 767.98px) {
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+
+    /*Général et fontsize*/
+
+    * {
+        margin: 0;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    html {
+        font-size: clamp(4px, 1vw, 10px);
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2,
+    .section-title {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 4.5rem;
+    }
+
+    p,
+    a {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    .footer h3 {
+        font-size: 4rem;
+    }
+
+    header {
+        margin: 0 4rem;
+    }
+
+    i {
+        color: #0065FC;
+        font-size: 4rem;
+    }
+
+    /*Header*/
+
+    /*nav bar */
+
+    .headline {
+        margin: 7rem 0;
+    }
+
+    .nav-bar-container {
+        width: 100%;
+        display: flex;
+    }
+
+    .nav-bar {
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .box-logo {
+        margin: 6rem;
+    }
+
+    /*FILTER*/
+
+    .main-filter {
+        max-width: initial;
+        margin: 3rem 0;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+    }
+
+    .filter-container {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    .filter {
+        flex-basis: 48%;
+        height: 10rem;
+        padding: 0 4rem;
+        border-radius: 7rem;
+    }
+
+    .h2-filter {
+        padding: 3rem 0;
+        align-self: flex-start;
+    }
+
+    .filter p {
+        font-size: 3rem;
+    }
+
+    .filter i {
+        margin-right: 6rem;
+    }
+
+    /*search-bar*/
+
+    .search-bar {
+        margin: 7rem 0;
+    }
+
+    .search-icon {
+        background: #0065fc;
+        border: 1px solid #0065fc;
+        color: #fff;
+        cursor: pointer;
+        width: 5rem;
+        display: inline-block;
+        border-radius: 3rem;
+    }
+
+
+    .search {
+        display: none;
+    }
+
+    .search-city input {
+        width: 100%;
+        height: 12rem;
+        font-size: 4rem;
+        padding: 0 0 0 3rem;
+        box-sizing: border-box;
+    }
+
+    .search-bar,
+    .search-bar .search-city,
+    .search-bar,
+    .search-bar .search {
+        width: 100%;
+    }
+
+    .icon-box {
+        border-radius: 3rem 0 0 3rem;
+    }
+
+    .icon-box,
+    .search-icon {
+        min-width: 12rem;
+        height: 12rem;
+        font-weight: 200;
+    }
+
+    /*info-bar*/
+
+    .icon-info-bar {
+        width: 7rem;
+        height: 7rem;
     
+    i {
+        font-size: 3rem;
+    }
+    }
+
+    /*hebergements*/
+
+    .hebergements-and-popular {
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    #hebergements {
+        background-color: #ffffff;
+    }
+
+    .hebergements {
+        width: 100%;
+        order: 2;
+    }
+
+    /*popular*/
+
+    .popular {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .popular-title {
+        margin-top: 5rem;
+    }
+
+    .popular-card {
+        width: 100%;
+        height: 40rem;
+        border-radius: 4rem;
+    }
+
+    .popular-card a {
+        display: flex;
+        height: 100%;
+    }
+
+    .popular-container img {
+        height: 100%;
+    }
+
+    .card-content {
+        height: 100%;
+    }
+
+
+    /*activités*/
+
+    /*footer*/
 }
+
+
+
+
+
+
+
+/* NAV BAR
+
+icone booki bleu a centrer dans la nav bar
+en dessous, la nav bar avec hebergement et activités
+underline qui est plus large que le mot et en dessous du mot
+H1 center et en deux lignes, en plein centre ville en dessous, une ligne
+bar de recherche (enlever le mot recherche et intégrer une loupe)
+mot "filtre" seul en titre pour les filtres
+en 2X2 pour les filtres
+logo "i" d'info en center sur deux lignes avec le texte a coté*/
+
+/* POPULAR
+
+ATTENTION : le container POPULAIRE passe en premier et non en deuxieme
+background color qui passe en gris
+
+h1 avec logo a droite en space between
+en dessous une card a la fois en largueur 
+card coupée en deux verticalement
+
+HEBERGEMENTS
+
+ATTENTION : passe en second et non en premier
+inversion du background color qui passe en blanc
+
+card une a la fois en scrolling
+card coupée en deux horizontalement
+
+ACTIVITES
+
+background color blanc
+h1 ok
+card une a la fois en scrolling
+card coupée en deux verticalement
+
+FOOTER
+
+passe a la vertical
+*/
