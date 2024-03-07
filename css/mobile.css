@@ -24,6 +24,7 @@
     h2,
     .section-title {
         font-size: 5rem;
+        padding: 5rem 0;
     }
 
     h3 {
@@ -40,10 +41,6 @@
         font-size: 4rem;
     }
 
-    header {
-        margin: 0 4rem;
-    }
-
     i {
         color: #0065FC;
         font-size: 4rem;
@@ -54,7 +51,12 @@
     /*nav bar */
 
     .headline {
-        margin: 7rem 0;
+        width: 100%;
+        margin: 7rem 3rem;
+    }
+
+    .headline p {
+        font-size: 4rem;
     }
 
     .nav-bar-container {
@@ -67,6 +69,39 @@
         width: 100%;
     }
 
+    .nav-bar li {
+        text-align: center;
+        width: 50%;
+        padding: 0;
+    }
+
+    .nav-bar li a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-bar a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #0065FC;
+        width: 0;
+        top: 7rem;
+        left: 0;
+        transition: width var(--transi200) ease;
+    }
+
+    .nav-bar a::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #f2f2f2;
+        width: 0;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+    }
+
     .nav-header {
         flex-direction: column;
         height: fit-content;
@@ -76,11 +111,19 @@
         margin: 6rem;
     }
 
+    .logo-booki {
+        transform: scale(1.7);
+    }
+
     /*FILTER*/
 
     .main-filter {
         max-width: initial;
-        margin: 3rem 0;
+        margin: 3rem;
+    }
+
+    .info-bar {
+        margin: 3rem;
     }
 
     .filter-bar {
@@ -95,7 +138,7 @@
     .filter {
         flex-basis: 48%;
         height: 10rem;
-        padding: 0 4rem;
+        padding: 0 3rem;
         border-radius: 7rem;
     }
 
@@ -133,19 +176,17 @@
         display: none;
     }
 
+
     .search-city input {
         width: 100%;
         height: 12rem;
         font-size: 4rem;
         padding: 0 0 0 3rem;
-        box-sizing: border-box;
+        box-sizing: content-box;
     }
 
-    .search-bar,
-    .search-bar .search-city,
-    .search-bar,
-    .search-bar .search {
-        width: 100%;
+    .search-bar {
+        margin: 0 3rem;
     }
 
     .icon-box {
@@ -164,10 +205,10 @@
     .icon-info-bar {
         width: 7rem;
         height: 7rem;
-    
-    i {
-        font-size: 3rem;
     }
+
+    .icon-info-bar i {
+        font-size: 3rem;
     }
 
     /*hebergements*/
@@ -184,6 +225,31 @@
     .hebergements {
         width: 100%;
         order: 2;
+        padding: 0 2.5rem;
+    }
+
+    .hebergements-title {
+        padding: 0;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+
+    .hebergements-cards img {
+        width: 100%;
+        height: 32rem;
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+    }
+
+    .card {
+        border-radius: 4rem;
+    }
+
+    .button-hebergements {
+        margin: 5rem;
     }
 
     /*popular*/
@@ -194,32 +260,93 @@
     }
 
     .popular-title {
-        margin-top: 5rem;
+        margin-top: 0;
     }
 
     .popular-card {
         width: 100%;
-        height: 40rem;
         border-radius: 4rem;
     }
 
-    .popular-card a {
+    .popular-card .card {
         display: flex;
         height: 100%;
     }
 
+    .popular-container {
+        padding-bottom: 13rem;
+    }
+
     .popular-container img {
-        height: 100%;
+        height: 32rem;
+        border-top-left-radius: 4rem;
+        border-bottom-left-radius: 4rem;
     }
 
     .card-content {
         height: 100%;
     }
 
+    .card-txt h3,
+    p {
+        font-size: initial;
+    }
+
 
     /*activités*/
 
+    .activities {
+        padding: 0 2.5rem 8rem 2.5rem;
+    }
+
+    .activities-cards {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .activities-cards .card {
+        width: 100%;
+        height: 45rem;
+        border-radius: 4rem;
+    }
+
+    .activities-cards img {
+        width: 100%;
+        height: 32rem;
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        border: none;
+    }
+
+    .activities-cards .card-content {
+        padding-left: 4rem;
+        box-sizing: border-box;
+        padding-top: 2.5rem;
+    }
+
+
     /*footer*/
+
+    .footer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        margin-top: 5rem;
+        width: 100%;
+        padding-left: 5rem;
+    }
+
+    .footer ul {
+        line-height: 1.5;
+    }
 }
 
 
@@ -228,42 +355,19 @@
 
 
 
-/* NAV BAR
+/* 
 
-icone booki bleu a centrer dans la nav bar
-en dessous, la nav bar avec hebergement et activités
-underline qui est plus large que le mot et en dessous du mot
-H1 center et en deux lignes, en plein centre ville en dessous, une ligne
-bar de recherche (enlever le mot recherche et intégrer une loupe)
-mot "filtre" seul en titre pour les filtres
-en 2X2 pour les filtres
-logo "i" d'info en center sur deux lignes avec le texte a coté*/
+***********NAV BAR***********
 
-/* POPULAR
+champ de recherche de ville
+-le placeholder de la barre de recherche n'est pas assez large, la search-bar doit prendre 100% , test ko
 
-ATTENTION : le container POPULAIRE passe en premier et non en deuxieme
-background color qui passe en gris
+***********POPULAR ok***********
 
-h1 avec logo a droite en space between
-en dessous une card a la fois en largueur 
-card coupée en deux verticalement
+********HEBERGEMENTS ok***********
 
-HEBERGEMENTS
+***********ACTIVITES ok***********
 
-ATTENTION : passe en second et non en premier
-inversion du background color qui passe en blanc
+***********FOOTER  ok***********
 
-card une a la fois en scrolling
-card coupée en deux horizontalement
-
-ACTIVITES
-
-background color blanc
-h1 ok
-card une a la fois en scrolling
-card coupée en deux verticalement
-
-FOOTER
-
-passe a la vertical
 */
