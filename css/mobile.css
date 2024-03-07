@@ -1,3 +1,20 @@
+/* 
+
+***********NAV BAR***********
+
+champ de recherche de ville
+-le placeholder de la barre de recherche n'est pas assez large, la search-bar doit prendre 100% , test ko
+
+***********POPULAR ok***********
+
+********HEBERGEMENTS ok***********
+
+***********ACTIVITES ok***********
+
+***********FOOTER  ok***********
+
+*/
+
 /* Mobile styles in mobile.css (max-width: 767.98px) */
 
 
@@ -18,7 +35,8 @@
     }
 
     h1 {
-        font-size: 6rem;
+        margin: 2.5rem 2.5rem 2.5rem 0;
+        font-size: 5rem;
     }
 
     h2,
@@ -28,12 +46,12 @@
     }
 
     h3 {
-        font-size: 4.5rem;
+        font-size: initial;
     }
 
     p,
     a {
-        font-size: 4rem;
+        font-size: initial;
         font-weight: 500;
     }
 
@@ -109,10 +127,6 @@
 
     .box-logo {
         margin: 6rem;
-    }
-
-    .logo-booki {
-        transform: scale(1.7);
     }
 
     /*FILTER*/
@@ -307,7 +321,7 @@
 
     .activities-cards .card {
         width: 100%;
-        height: 45rem;
+        height: auto;
         border-radius: 4rem;
     }
 
@@ -320,9 +334,8 @@
     }
 
     .activities-cards .card-content {
-        padding-left: 4rem;
+        padding:2.5rem 4rem;
         box-sizing: border-box;
-        padding-top: 2.5rem;
     }
 
 
@@ -348,26 +361,3 @@
         line-height: 1.5;
     }
 }
-
-
-
-
-
-
-
-/* 
-
-***********NAV BAR***********
-
-champ de recherche de ville
--le placeholder de la barre de recherche n'est pas assez large, la search-bar doit prendre 100% , test ko
-
-***********POPULAR ok***********
-
-********HEBERGEMENTS ok***********
-
-***********ACTIVITES ok***********
-
-***********FOOTER  ok***********
-
-*/
