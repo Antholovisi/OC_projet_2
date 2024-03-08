@@ -346,8 +346,9 @@ i {
     object-fit: cover;
 }
 
-.card-txt h3, p {
-    font-size: clamp(1.3rem, 1.2vw, 1.6rem);
+.card-txt h3,
+p {
+    font-size: clamp(1.3rem, 1.2vw, 1.9rem);
 }
 
 .card-content {
