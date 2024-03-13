@@ -107,7 +107,6 @@ champ de recherche de ville
         width: 0;
         top: 3.5rem;
         left: 0;
-        transition: width var(--transi200) ease;
     }
 
     .nav-bar a::before {
@@ -229,7 +228,6 @@ champ de recherche de ville
     .search-icon {
         min-width: 4rem;
         font-weight: 50;
-        offset-position: left 20px ;
     }
 
     /*info-bar*/
