@@ -82,7 +82,7 @@ h1 {
     font-size: 1.8rem;
 }
 
-.hebergements-and-popular .card-title {
+.hebergements-and-popular .card-title, .card-subtitle {
     font-size: clamp(1.3rem, 1.2vw, 1.6rem);
 }
 
