@@ -175,10 +175,6 @@ champ de recherche de ville
     }
 
     .search-icon {
-        background: #0065fc;
-        border: 1px solid #0065fc;
-        color: #fff;
-        cursor: pointer;
         width: 5rem;
         display: inline-block;
         border-radius: 1.5rem;
@@ -187,7 +183,6 @@ champ de recherche de ville
     .search-icon i {
         font-size: 1.7rem;
     }
-
 
     .search {
         display: none;
