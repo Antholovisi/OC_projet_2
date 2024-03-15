@@ -46,7 +46,7 @@ a {
 .card {
     background-color: white;
     border-radius: 2rem;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.016));
     transition: all var(--transi200) ease-in-out;
 }
 
